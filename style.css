@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+}
+body{
+    font-size: 14px;
+    color: #96979C;
+    font-family: "Hanken Grotesk", serif;
+    font-weight: 500;
+    
+}
+.parent{
+    background-color:#F3EAE4 ;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100vh;
+
+}
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+img{
+  height: 200px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  bottom: 5px;
+}
+h1{
+    color: black;
+}
+p{
+ margin-top: 0px;
+ margin-bottom: 0px;
+ line-height: 20px;
+ padding: 20px;
+}
+.text_div{
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+#current_price{
+    color: #438069;
+    margin-right: 10px;
+    font-size: xx-large;
+}
+#previous_price{
+    text-decoration: line-through ;
+    position: relative;
+    bottom: 7px;
+    
+}
+#cart_div{
+    background-color: #438069;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    justify-self: center;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+#cart_div img{
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top:1px ;
+}
+#cart_div p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    padding: 0px;
+    color: white;
+    height: 10px;
+}
+#cart_div:hover{
+    cursor: pointer;
+   
+}
+ h1,#current_price{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    
+}
+#first_p{
+    font-family:monospace ;
+   
+}
+
+@media screen and (min-width:1000px){
+    .container{
+        flex-direction: row;
+        background-color: transparent;
+        padding-bottom: 0px;
+        height: 60%;
+        
+    }
+    .parent{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #section1{
+        width: 25%;
+    }
+    img{
+        position: static;
+        height: 100%;
+        border-radius: 10px 0px 0px 10px;
+    }
+    #section2{
+        width: 25%;
+        background-color: white;
+        padding-bottom: 20px;
+    }
+    #cart_div{
+        width: 75%;
+        padding: 10px;
+    }
+    #section1 img{
+        content:url('./images/image-product-desktop.jpg') ;
+    }
+}
+
